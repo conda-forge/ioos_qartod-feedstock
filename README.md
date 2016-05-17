@@ -5,7 +5,7 @@ Home: https://pypi.python.org/pypi/ioos_qartod
 
 Package license: Apache 2.0
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Collection of utilities, scripts and tests to assist in automated quality assurance
 
@@ -69,9 +69,10 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ioos_qartod-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/ioos_qartod-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/ioos_qartod-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ioos_qartod-feedstock) 
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ioos_qartod-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ioos_qartod-feedstock/branch/master)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ioos-qartod-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ioos-qartod-feedstock/branch/master)
 
 Current release info
 ====================
