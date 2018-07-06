@@ -1,39 +1,38 @@
 {% set version = "0.0.3" %}
 
 package:
-    name: ioos_qartod
-    version: {{ version }}
+  name: ioos_qartod
+  version: {{ version }}
 
 source:
-    fn: ioos_qartod-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/i/ioos_qartod/ioos_qartod-{{ version }}.tar.gz
-    sha256: 2936e09437b8ed3e555aef9cb69625da89e6a228e403684a57fc521c08521d67
+  url: https://pypi.io/packages/source/i/ioos_qartod/ioos_qartod-{{ version }}.tar.gz
+  sha256: 2936e09437b8ed3e555aef9cb69625da89e6a228e403684a57fc521c08521d67
 
 build:
+  number: 1
   noarch: python
-    number: 1
-    script: python -m pip install --no-deps --ignore-installed .
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - numpy
-        - pandas
-        - quantities
-        - pyproj
+  build:
+    - python
+    - pip
+  run:
+    - python
+    - numpy
+    - pandas
+    - quantities
+    - pyproj
 
 test:
-    imports:
-        - ioos_qartod
+  imports:
+    - ioos_qartod
 
 about:
-    home: https://pypi.python.org/pypi/ioos_qartod
-    license: Apache 2.0
-    summary: 'Collection of utilities, scripts and tests to assist in automated quality assurance.'
+  home: https://pypi.python.org/pypi/ioos_qartod
+  license: Apache 2.0
+  summary: 'Collection of utilities, scripts and tests to assist in automated quality assurance.'
 
 extra:
-    recipe-maintainers:
-        - ocefpaf
+  recipe-maintainers:
+    - ocefpaf
