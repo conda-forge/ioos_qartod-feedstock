@@ -3,11 +3,11 @@ About ioos_qartod
 
 Home: https://pypi.python.org/pypi/ioos_qartod
 
-Package license: Apache 2.0
+Package license: Apache-2.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: Collection of utilities, scripts and tests to assist in automated quality assurance.
+Summary: Collection of utilities, scripts and tests to assist in automated quality assurance
 
 
 
