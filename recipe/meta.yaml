@@ -1,4 +1,4 @@
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 
 package:
   name: ioos_qartod
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/ioos_qartod/ioos_qartod-{{ version }}.tar.gz
-  sha256: 2936e09437b8ed3e555aef9cb69625da89e6a228e403684a57fc521c08521d67
+  sha256: a7e2346d4b968f3259bf08c274fabb7a38a013eb1db71f172dbe08a1de7e47d5
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -30,8 +30,9 @@ test:
 
 about:
   home: https://pypi.python.org/pypi/ioos_qartod
-  license: Apache 2.0
-  summary: 'Collection of utilities, scripts and tests to assist in automated quality assurance.'
+  license_file: LICENSE.txt
+  license: Apache-2.0
+  summary: 'Collection of utilities, scripts and tests to assist in automated quality assurance'
 
 extra:
   recipe-maintainers:
