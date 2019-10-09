@@ -30,8 +30,9 @@ test:
 
 about:
   home: https://pypi.python.org/pypi/ioos_qartod
-  license: Apache 2.0
-  summary: 'Collection of utilities, scripts and tests to assist in automated quality assurance.'
+  license_file: LICENSE.txt
+  license: Apache-2.0
+  summary: 'Collection of utilities, scripts and tests to assist in automated quality assurance'
 
 extra:
   recipe-maintainers:
