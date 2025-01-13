@@ -5,26 +5,29 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/i/ioos_qartod/ioos_qartod-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/i/ioos_qartod/ioos_qartod-{{ version }}.tar.gz
   sha256: a7e2346d4b968f3259bf08c274fabb7a38a013eb1db71f172dbe08a1de7e47d5
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
-  build:
-    - python
+  host:
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - numpy
     - pandas
     - quantities
     - pyproj
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ioos_qartod
 
